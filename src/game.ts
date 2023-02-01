@@ -1,5 +1,8 @@
 import 'phaser';
 import Demo from './demo';
+import ChipTest from './chip-test';
+import BeatLineTest from './beat-line-test';
+import DTXFileLoad from './dtx-file-load';
 
 const config = {
     type: Phaser.AUTO,
@@ -9,7 +12,7 @@ const config = {
     loader: {
         baseURL: 'assets'
     },
-    scene: [Demo]
+    scene: [DTXFileLoad, Demo, BeatLineTest, ChipTest]
 };
 
 const game = new Phaser.Game(config);
