@@ -3,8 +3,20 @@
 This is a roadmap / checklist of the list of things I'm testing on PhaserJS to figure out the requirements to rebuild DTXMania on this platform.
 
 - [ ] .dtx file handling
-- [ ] Read MIDI input
-  - [ ] Electronic drums
+    - [x] Reading file with SHIFT-JIS encoding
+    - [ ] Read
+        - [ ] Header
+            - [ ] Song information
+            - [ ] Preview info
+            - [ ] Sound chip data
+        - [ ] Objects
+            - [ ] Data structure
+            - [ ] Object list to data structure mapping
+                - [ ] Chip timing calculation based on notes
+    - [ ] Write
+- [ ] Input reading
+    - [ ] PC keyboard
+    - [ ] Electronic drums (MIDI)
 - [ ] Scene creation
     - [ ] Main menu
         - [ ] Master list generation
@@ -24,5 +36,15 @@ This is a roadmap / checklist of the list of things I'm testing on PhaserJS to f
             - [ ] Difficulty selection
         - [ ] Quick settings
     - [ ] Game Stage
+        - [ ] .dtx file read
+        - [x] Video playback
+        - [ ] Bar
+            - [x] Rendering
+            - [ ] Speed adjustment
+        - [ ] Lane interaction
+            - [ ] Rendering
+            - [ ] Speed adjustment
+            - [ ] Input feedback
+            - [ ] Chip generation
 - [ ] Jumping between stages / deeplinking
 - [ ] Loading scenes with additional parameters
